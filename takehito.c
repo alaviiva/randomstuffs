@@ -100,7 +100,7 @@ PC4
 // strings stored in flash
 const char str_0[] PROGMEM = "DAT BAT";
 const char str_1[] PROGMEM = "ILPALAZZO";
-const char str_2[] PROGMEM = "HARUHI'S MOM";
+const char str_2[] PROGMEM = "HARUHI'S \"MOM\"";
 const char str_3[] PROGMEM = "OLIVIER";
 const char str_4[] PROGMEM = "ZECHS";     
 const char str_5[] PROGMEM = "THE FOOL";
@@ -462,6 +462,7 @@ void scroll_text(const char *text, int speed) {
 
 // this is where magic happens
 void magic(char ch1, char ch2, int p9) {
+	// TODO this could use only one buffer, 150 more bytes for our evil deeds
 	char kala[150] = "";
 	char k[] = "@@@@@";
 	if (p9) {
@@ -567,6 +568,7 @@ int main() {
 				
 				//86400 s = 24 h
 				if (time == 86320){
+				  //TODO set @ to 0 here? 
 					time = 0;
 					chr1++; 
 					scroll_text(jee, 100);
@@ -604,3 +606,4 @@ int main() {
 
 
 */
+
