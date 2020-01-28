@@ -1,4 +1,4 @@
-# Copypaste address of currently open tab to terminal
+# Copypaste address of currently open tab to telegram
 import time
 
 #window.activate("Firefox")
@@ -8,7 +8,7 @@ if window.get_active_class().endswith("Firefox"):
   time.sleep(0.1)
   keyboard.send_keys("<ctrl>+c")
 
-window.activate("Terminal")
-keyboard.send_keys("<ctrl>+<shift>+v")
-time.sleep(0.2)
-keyboard.send_keys(" ")
+  window.activate("Telegram")
+  keyboard.send_keys("<ctrl>+v")
+  time.sleep(0.1)
+  keyboard.send_keys(" ")

@@ -1,14 +1,10 @@
-# Copypaste stuff to terminal
+# Copypaste stuff to telegram
 import time
 keyboard.send_keys("<ctrl>+c")
-#text = clipboard.get_selection()
-#clipboard.fill_clipboard(text)
-#window.activate("Firefox")
-#if window.wait_for_focus(".*Firefox.*"):
 
-window.activate("Terminal")
-keyboard.send_keys("\"<ctrl>+<shift>+v")
-time.sleep(0.2)
+window.activate("Telegram")
+keyboard.send_keys("\"<ctrl>+v")
+time.sleep(0.1)
 keyboard.send_keys("\" ")
 
 #keyboard.send_keys("\""+text+"\" ")
