@@ -1,12 +1,16 @@
-/* Hide all the useless stuff (aka everything but seach bar) from the frontpage of youtube */
-@-moz-document url(https://www.youtube.com/) {
-  div {
+@-moz-document url("https://www.youtube.com/") {
+/* Hide all the useless stuff from the frontpage of youtube */
+div {
     visibility: hidden;
-  }
-  div #masthead-search-terms {
-    visibility: visible;
-  }
-  table {
-    visibility: visible;
-  }
 }
+
+ytd-searchbox#search * {
+    visibility: visible;
+}
+
+ul[role="listbox"] * {
+    visibility: visible;
+}
+
+}
+
