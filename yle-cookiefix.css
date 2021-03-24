@@ -1,0 +1,11 @@
+@-moz-document domain("yle.fi") {
+
+div#yle-consent-sdk-container {
+    visibility: hidden;
+}
+
+body {
+    overflow: auto !important;
+}
+
+}
