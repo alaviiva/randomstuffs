@@ -1,0 +1,14 @@
+@-moz-document url-prefix("https://discord.com/channels/") {
+
+div.notice-3bPHh- {
+    visibility: hidden;
+    height: 0;
+}
+
+nav.container-3w7J-x>div:nth-child(2) {
+    visibility: hidden;
+    height: 0;
+}
+
+}
+
