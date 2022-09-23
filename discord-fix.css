@@ -1,13 +1,10 @@
 @-moz-document url-prefix("https://discord.com/channels/") {
 
-div.notice-2HEN-u {
+div[class|=attachedBars] {
     visibility: hidden;
     height: 0;
 }
 
-nav.container-3w7J-x>div:nth-child(2) {
-    visibility: hidden;
-    height: 0;
-}
 
+/*span[class^=username-] {color: #0000ff !important;}*/
 }
