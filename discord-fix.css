@@ -1,6 +1,6 @@
 @-moz-document url-prefix("https://discord.com/channels/") {
 
-div[class|=attachedBars] {
+div[class|=attachedBars] div[class|=bar] {
     visibility: hidden;
     height: 0;
 }
