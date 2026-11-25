@@ -1,0 +1,13 @@
+@-moz-document url("https://www.hs.fi/uusimmat/") {
+a[href^="/urheilu/"] {
+    visibility: hidden;
+    height: 0;
+}
+
+}
+
+@-moz-document url-prefix("https://www.hs.fi/") {
+div[data-radix-popper-content-wrapper] {
+    visibility: hidden;
+}
+}

@@ -1,7 +1,0 @@
-@-moz-document url("https://www.hs.fi/uusimmat/") {
-a[href^="/urheilu/"] {
-    visibility: hidden;
-    height: 0;
-}
-
-}
